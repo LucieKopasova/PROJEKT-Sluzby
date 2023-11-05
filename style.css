@@ -1,0 +1,237 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background-color: #fafafa;
+  max-width: 500px;
+  margin: auto;
+  color: #8b8b8b;
+  font-weight: 300;
+}
+header img {
+  width: 350px;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  bottom: 10px;
+  color: #000000;
+}
+
+h2 {
+  color: #000000;
+  font-size: 16px;
+}
+.cara {
+  width: 60px;
+  border-bottom: 2px solid #407bff;
+  margin: 0 auto 30px;
+}
+
+header {
+  text-align: center;
+  margin: 60px 0;
+}
+
+header p {
+  margin: 0 20px 30px 20px;
+}
+
+.sluzby {
+  text-align: center;
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.tlacitko {
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin: auto;
+  padding: 11px;
+}
+
+.dobrudrustvi {
+  width: 195px;
+  height: 40px;
+  background-color: #407bff;
+  margin-bottom: 10px;
+}
+
+.pohoda {
+  width: 220px;
+  height: 40px;
+  background-color: #8b8b8b;
+}
+
+.ikona {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px #407bff1f;
+  max-width: 460px;
+  min-height: 80px;
+  margin-bottom: 15px;
+  display: flex;
+  font-size: 13px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.ikona img {
+  height: 40px;
+}
+
+.ikona p {
+  width: 346px;
+}
+
+aside {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    max-width: 768px;
+  }
+
+  header,
+  aside {
+    width: 550px;
+    margin: 80px auto 40px;
+  }
+  header img {
+    width: 400px;
+  }
+
+  header p {
+    margin: 0 0 30px 0;
+  }
+
+  .uvod {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tlacitko {
+    margin: 0;
+  }
+  .dobrudrustvi {
+    margin-right: 10px;
+  }
+
+  .nadpis {
+    flex-basis: 100%;
+  }
+
+  .ikony {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .ikona {
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding-top: 40px;
+    padding-bottom: 21px;
+    width: 30%;
+  }
+  .ikona p {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    max-width: 1500px;
+  }
+  header,
+  section {
+    width: 1040px;
+    margin: 60px auto 80px;
+    text-align: left;
+  }
+
+  aside {
+    text-align: left;
+    max-width: 430px;
+  }
+
+  .delegatu aside {
+    margin: 0 60px 0 0;
+  }
+
+  .ck aside {
+    margin: 0 0 0 60px;
+  }
+
+  header,
+  .sluzby {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cara {
+    margin-left: 0;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  .uvod {
+    justify-content: flex-start;
+  }
+
+  header {
+    display: flex;
+  }
+
+  header img {
+    order: 1;
+    max-width: 425px;
+    margin-left: 32.5px;
+    margin-right: 32.5px;
+  }
+
+  .sluzby {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  .ck aside {
+    order: 1;
+  }
+
+  .uvod {
+    justify-content: flex-start;
+    max-width: 490px;
+    margin-right: 60px;
+  }
+
+  .ikony {
+    align-items: center;
+    max-width: 550px;
+  }
+
+  .ikona {
+    height: 190px;
+  }
+}
